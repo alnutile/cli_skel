@@ -35,11 +35,13 @@ vendor/
 
 ## Install
 
-Via Composer
-
+First install `cgr` as seen [here](https://github.com/consolidation/cgr)
+Then run 
 ``` bash
-$ composer require :vendor/:package_name
+$ cgr global require :vendor/:package_name:dev-master
 ```
+
+So the article [here](https://medium.com/@alnutile/php-cli-skeleton-c054eedde48f) for more details
 
 ## Global Install Notes
 

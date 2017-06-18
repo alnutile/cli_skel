@@ -34,15 +34,15 @@
     "autoload": {
         "psr-4": {
             ":vendor\\:package_name\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            ":vendor\\:package_name\\": "tests"
         },
         "files": [
             "bootstrap/helpers.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            ":vendor\\:package_name\\": "tests"
+        }
     },
     "scripts": {
         "test": "phpunit",
