@@ -28,7 +28,7 @@ $replacements = [
     ':vendor'                      => function () use(&$values) { return $values['package_vendor']; },
     ':package_name'                => function () use(&$values) { return $values['package_name']; },
     ':package_description'         => function () use(&$values) { return $values['package_description']; },
-    'League\\Skeleton'             => function () use(&$values) { return $values['psr4_namespace']; },
+    'Alnutile\\Skeleton'             => function () use(&$values) { return $values['psr4_namespace']; },
 ];
 
 function read_from_console ($prompt) {

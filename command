@@ -11,7 +11,7 @@ $app = require_once __DIR__.'/bootstrap/app.php';
 
 $app->command('hello [--name=] message', function (
     OutputInterface $output,
-    \League\Skeleton\SkeletonClass $skel,
+    \Alnutile\Skeleton\SkeletonClass $skel,
     $name, $message) use ($app) {
 
     $output->writeln("\nRunning your command\n");

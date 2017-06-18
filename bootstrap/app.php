@@ -12,8 +12,8 @@ load_dotenv();
 $app = new Silly\Edition\Pimple\Application();
 
 
-$app->getContainer()[\League\Skeleton\Application::class] = function() use ($app) {
-    $core = new \League\Skeleton\Application($app);
+$app->getContainer()[\Alnutile\Skeleton\Application::class] = function() use ($app) {
+    $core = new \Alnutile\Skeleton\Application($app);
     return $core;
 };
 
@@ -21,15 +21,15 @@ $app->getContainer()['config'] = function() use ($app) {
     return config();
 };
 
-$app->getContainer()[\League\Skeleton\SkeletonClass::class] = function() use ($app) {
-    $skel = new \League\Skeleton\SkeletonClass();
+$app->getContainer()[\Alnutile\Skeleton\SkeletonClass::class] = function() use ($app) {
+    $skel = new \Alnutile\Skeleton\SkeletonClass();
     return $skel;
 };
 
-$app->getContainer()['skel'] = $app->getContainer()[\League\Skeleton\SkeletonClass::class];
+$app->getContainer()['skel'] = $app->getContainer()[\Alnutile\Skeleton\SkeletonClass::class];
 
 
-$app->getContainer()['app'] = $app->getContainer()[\League\Skeleton\Application::class];
+$app->getContainer()['app'] = $app->getContainer()[\Alnutile\Skeleton\Application::class];
 
 $app->getContainer()['output'] = function() use ($app) {
 

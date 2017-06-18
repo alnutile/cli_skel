@@ -1,6 +1,6 @@
 <?php
 
-namespace League\Skeleton;
+namespace Alnutile\Skeleton;
 
 class SkeletonClassTest extends TestCase
 {

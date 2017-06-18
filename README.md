@@ -49,8 +49,8 @@ This is how a user can install this for a reliable global install:
 ## Usage
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+$skeleton = new Alnutile\Skeleton();
+echo $skeleton->echoPhrase('League!', 'Hello');
 ```
 
 ## Change log
