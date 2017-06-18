@@ -19,5 +19,9 @@ class SkeletonClassTest extends TestCase
         $results = $skel->echoPhrase($name, $message);
 
         $this->assertEquals("Hello foo, Bar", $results);
+
+        $this->assertEquals("boo", $skel->getConfigValueByKey('baz'));
+
+        $this->assertEquals("bar_env", env("foo_env"));
     }
 }
