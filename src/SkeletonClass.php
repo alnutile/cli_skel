@@ -2,15 +2,8 @@
 
 namespace League\Skeleton;
 
-class SkeletonClass
+class SkeletonClass extends Application
 {
-    /**
-     * Create a new Skeleton Instance
-     */
-    public function __construct()
-    {
-        // constructor body
-    }
 
     public function echoPhrase($name, $message)
     {

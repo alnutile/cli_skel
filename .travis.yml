@@ -1,10 +1,8 @@
 language: php
 
 php:
-  - 5.6
   - 7.0
   - 7.1
-  - hhvm
 
 # This triggers builds to run on the new TravisCI infrastructure.
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
@@ -24,8 +22,8 @@ before_script:
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
 
 script:
-  - vendor/bin/phpcs --standard=psr2 src/
-  - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
+  - bin/phpcs --standard=psr2 src/
+  - bin/phpunit --coverage-text --coverage-clover=coverage.clover
 
 after_script:
   - |
